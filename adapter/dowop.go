@@ -7,6 +7,8 @@ import (
 type Dowop struct {}
 
 func (a Dowop) Add(thing string) {
-	fmt.Printf("dowop called: thing=%s", thing)
-	fmt.Println("")
+	fmt.Print("Enter hostname: ")
+	var input string
+	fmt.Scanln(&input)
+	fmt.Println(input)
 }
